@@ -10,15 +10,16 @@ body {
 }
 
 .menu__hamburguer {
-    border: none;
     background: none;
+    border: none;
 
     cursor: pointer;
 
     margin: 1.875rem 0rem 1.25rem 1.25rem;
+    padding: 0;
     
     height: 2.475rem;
-    width: 2.8075rem;
+    width: 2.4075rem;
 }
 
 .menu__hamburguer_bar {
@@ -50,6 +51,7 @@ body {
 .nav__item {
     list-style: none;
     padding: 1rem 0;
+    transition: 0.3s ease;
 }
 
 .nav__item_link {
