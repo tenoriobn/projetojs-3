@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background: #373c56;
+}
+
+#menu {
+    z-index: 2;
+}
+
+.menu__hamburguer {
+    border: none;
+    background: none;
+
+    cursor: pointer;
+
+    margin: 1.875rem 0rem 1.25rem 1.25rem;
+    
+    height: 2.475rem;
+    width: 2.8075rem;
+}
+
+.menu__hamburguer_bar {
+    height: .3125rem;
+    width: 100%;
+    background: #b81568;
+    display: block;
+    border-radius: .3125rem;
+    transition: 0.3s ease;
+
+    z-index: 2;
+}
+
+#menu__hamburguer_bar--1 {
+    transform: translateY(-4px);
+}
+
+#menu__hamburguer_bar--3 {
+    transform: translateY(4px);
+}
+
+.nav__lista {
+    padding: 0;
+    margin: 0 1.25rem;
+    transition: 0.3s ease;
+    display: none;
+}
+
+.nav__item {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.nav__item_link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__item_link:hover {
+    font-weight: 700;
+}
+
+.menu__bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu__bg {
+    z-index: -1;
+    width: 0;
+    height: 0;
+    margin: 1.875rem 0 1.25rem 1.25rem;
+    background: radial-gradient(circle, #e94498, #b81568);
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+/* Estilização feita para ser aplicada por meio do JS */
+.change {
+    display: block;
+}
+
+.change-bg {
+    width: 34.375rem;
+    height: 33.75rem;
+    transform: translate(-60%, -30%);
+}
+
+.change .menu__hamburguer_bar {
+    background: white;
+}
+
+.change #menu__hamburguer_bar--1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #menu__hamburguer_bar--2 {
+    opacity: 0;
+}
+
+.change #menu__hamburguer_bar--3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
